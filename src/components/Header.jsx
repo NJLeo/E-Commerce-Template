@@ -18,18 +18,24 @@ const Header = () => {
       <header className="p-3 border-bottom bg-light">
         <div className="container-fluid">
           <div className="row g-3">
+
+            {/* Link logo EcoagroZn Cerealista em Verde */}
             <div className="col-md-3 text-center">
               <Link to="/">
                 <img
                   alt="logo"
-                  src="../../images/logo.webp"
+                  src="../../images/3.png"
                 />
               </Link>
             </div>
+
+            {/* Barra de Procura*/}
             <div className="col-md-5">
               <Search />
             </div>
+
             <div className="col-md-4">
+              {/* Icone Carrinho de Compras */}
               <div className="position-relative d-inline mr-3">
                 <Link to="/cart" className="btn btn-primary">
                   <IconCart3 className="i-va" />
@@ -37,8 +43,10 @@ const Header = () => {
                     2
                   </div>
                 </Link>
-              </div>
+              </div>     
+              {/* Icone Perfil Usuario */}
               <div className="btn-group">
+                
                 <button
                   type="button"
                   className="btn btn-secondary rounded-circle border mr-3 dropdown-toggle1"
@@ -92,19 +100,11 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <a
-                href="https://www.buymeacoffee.com/bhaumik"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                  alt="BuyMeACoffee" width="120"
-                />
-              </a>
+             
               {/* <Link to="/account/signin">Sign In</Link> |{" "}
               <Link to="/account/signup"> Sign Up</Link> */}
             </div>
+
           </div>
         </div>
       </header>

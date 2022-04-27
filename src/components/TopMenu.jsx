@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 const TopMenu = () => {
   return (
     <React.Fragment>
+
+      {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-0">
         <div className="container-fluid">
+
           <Link className="navbar-brand" to="/">
-            E-Commerce
+            ZN Eco Agro
           </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -20,8 +24,12 @@ const TopMenu = () => {
           >
             <span className="navbar-toggler-icon" />
           </button>
+
+          {/* Navbar */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
+
+              {/* Botão Navegue */}
               <li className="nav-item dropdown">
                 <button
                   className="btn nav-link dropdown-toggle font-weight-bold"
@@ -29,7 +37,7 @@ const TopMenu = () => {
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  All Pages
+                  Navegue
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -80,39 +88,31 @@ const TopMenu = () => {
                   </li>
                 </ul>
               </li>
+
+              {/*Kits Veganos Dia a Dia */}
               <li className="nav-item">
                 <Link className="nav-link" to="/category">
-                  Fashion
+                  Kits Veganos para o Dia a Dia
                 </Link>
               </li>
+
+              {/* Kits Veganos Presente */}
               <li className="nav-item">
                 <Link className="nav-link" to="/category">
-                  Supermarket
+                  Kits Veganos para Presente
                 </Link>
               </li>
+
+
               <li className="nav-item">
                 <Link className="nav-link" to="/category">
-                  Electronics
+                  Outros Produtos
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/category">
-                  Furniture
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/category">
-                  Garden & Outdoors
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/category">
-                  Jewellery
-                </Link>
-              </li>
+              
               <li className="nav-item">
                 <Link className="nav-link" to="/documentation">
-                  Documentation
+                  Documentação
                 </Link>
               </li>
             </ul>

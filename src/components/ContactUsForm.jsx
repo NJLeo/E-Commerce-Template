@@ -29,14 +29,15 @@ const ContactUsForm = (props) => {
       className={`needs-validation ${submitFailed ? "was-validated" : ""}`}
       noValidate
     >
+      {/* Primeira linha do Formulario */}
       <div className="row">
         <div className="col-md-6">
           <Field
             name="name"
             type="text"
-            label="Name"
+            label="Nome"
             component={renderFormGroupField}
-            placeholder="Your full name"
+            placeholder="Seu nome completo"
             icon={IconPersonFill}
             required={true}
             validate={[required, maxLength50, name]}
@@ -49,9 +50,9 @@ const ContactUsForm = (props) => {
           <Field
             name="company"
             type="text"
-            label="Company"
+            label="Empresa"
             component={renderFormGroupField}
-            placeholder="Your company name"
+            placeholder="Nome da Empresa"
             icon={IconBuilding}
             required={true}
             validate={[required, maxLength50]}
@@ -61,14 +62,15 @@ const ContactUsForm = (props) => {
         </div>
       </div>
 
+      {/* Segunda linha do Formulario */}
       <div className="row">
         <div className="col-md-6">
           <Field
             name="mobileNo"
             type="number"
-            label="Mobile no"
+            label="Número de Celular"
             component={renderFormGroupField}
-            placeholder="Mobile no with country code"
+            placeholder="DDD + Número de Celular"
             icon={IconPhoneFill}
             validate={[required, maxLengthMobileNo, minLengthMobileNo, digit]}
             required={true}
@@ -81,9 +83,9 @@ const ContactUsForm = (props) => {
           <Field
             name="email"
             type="email"
-            label="Email address"
+            label="Endereço de Email "
             component={renderFormGroupField}
-            placeholder="Your email address"
+            placeholder="Seu endereço de Email"
             icon={IconEnvelopeFill}
             validate={[required, maxLength50, email]}
             maxLength="50"
@@ -92,34 +94,43 @@ const ContactUsForm = (props) => {
           />
         </div>
       </div>
+
+      {/* Div com Campo Mensagem e Checkbox */}
       <div className="row g-3">
+
+        {/* Campo Mensagem*/}
         <div className="col-md-12">
           <Field
             name="message"
-            label="Message"
+            label="Mensagem"
             maxLength="1000"
             component={renderFormTextArea}
             validate={maxLength1000}
-            placeholder="What you are looking for?"
+            placeholder="Qual informação deseja?"
           />
         </div>
+
+        {/* Checkbox */}
         <div className="col-md-12">
           <Field
             id="informed"
-            label="Keep me informed via email or phone about its Products and Services."
+            label="Mantenha-me com informações via email ou telefone sobre nossos produtos e serviços."
             name="informed"
             component={renderFormCheckbox}
           />
         </div>
+
       </div>
 
+      {/* Botão Submit */}
       <button
         type="submit"
         className="btn btn-primary btn-block mt-3"
         disabled={submitting}
       >
-        Submit
+        Enviar
       </button>
+
     </form>
   );
 };
