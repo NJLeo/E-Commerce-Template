@@ -31,16 +31,22 @@ const Banner = (props) => {
       data-ride="carousel"
       style={{ minHeight: 100 }}
     >
+
+      {/* Botoes do Carousel */}
       <ol className="carousel-indicators">
         {props.data.map((item, index) => (
           <Indicator item={props.id} index={index} key={index} />
         ))}
       </ol>
+      
+      {/* Imagens background carousel */}
       <div className="carousel-inner">
         {props.data.map((item, index) => (
           <Item item={item} index={index} key={index} />
         ))}
       </div>
+
+      {/* Setinha Voltar */}
       <a
         className="carousel-control-prev"
         href={`#${props.id}`}
@@ -50,6 +56,8 @@ const Banner = (props) => {
         <span className="carousel-control-prev-icon" aria-hidden="true" />
         <span className="sr-only">Previous</span>
       </a>
+
+      {/* Setinha Avançar */}
       <a
         className="carousel-control-next"
         href={`#${props.id}`}
@@ -59,6 +67,7 @@ const Banner = (props) => {
         <span className="carousel-control-next-icon" aria-hidden="true" />
         <span className="sr-only">Next</span>
       </a>
+
     </div>
   );
 };

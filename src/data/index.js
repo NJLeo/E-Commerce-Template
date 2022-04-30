@@ -1,24 +1,30 @@
 export const data = {
+  
+  //Banners do Carrousel 
   banner: [
     {
-      to: "/link",
-      img: "../../images/banner/Banner_2.webp",
-      title: "First slide label",
+      to: "/category",
+      img: "../../images/banner/bannerkitvegan1.png",
+      // img: "../../images/banner/Banner_2.webp",
+
+      title: "Kits Veganos para o Dia a Dia",
       description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
     },
     {
-      to: "/link",
+      to: "/category",
       img: "../../images/banner/Banner_3.webp",
-      title: "Second slide label",
+      title: "Kits Veganos para Presente",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      to: "/link",
+      to: "/category",
       img: "../../images/banner/Banner_1.webp",
-      title: "Third slide label",
+      title: "Outros Produtos",
       description: " Praesent commodo cursus magna, vel scelerisque nisl.",
     },
   ],
+
+  //Icones dos Tipos de Produto
   iconProducts: [
     {
       to: "/product/detail",
@@ -85,6 +91,7 @@ export const data = {
       cssClass: "display-1 text-primary",
     },
   ],
+
   products: [
     {
       id: 1,
@@ -155,6 +162,7 @@ export const data = {
         "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
     },
   ],
+
   blogBanner: [
     {
       to: "/blog/detail",
@@ -175,6 +183,7 @@ export const data = {
       description: "Praesent commodo cursus magna, vel scelerisque nisl.",
     },
   ],
+
   blogList: [
     {
       to: "/blog/detail",

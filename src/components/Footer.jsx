@@ -60,20 +60,25 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+
+        {/*Div da Row com as 4 colunas */}
         <div className="container-fluid bg-dark text-white">
+          {/*Linha no footer com as 4 colunas */}
           <div className="row ">
+
+            {/*Zn Eco Agro Descrição*/}
             <div className="col-md-3 py-3">
-              <div className="h6">Company Name</div>
+              <div className="h6">ZN Eco Agro</div>
               <hr />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                A ZN Eco Agro quer oferecer os melhores produtos Agroecológicos para você! Ao comprar conosco você irá ajudar expandir negócios mais sustentáveis do que grandes coorporações e participar de uma economia mais solidária. Tentamos sempre que possível fazer parcerias com outros movimentos, pessoas e negócios mais sustentáveis, disponibilizando produtos oriundos desse nicho mais alinhados à natureza e ao planeta.
               </p>
             </div>
+
+            {/*Produtos */}
             <div className="col-md-3 py-3">
-              <div className="h6">Products</div>
+              <div className="h6">Produtos</div>
               <hr />
               <ul className="list-group list-group-flush">
                 <li className="list-group-item bg-dark text-white border-light">
@@ -81,7 +86,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Electronics
+                    Kits Veganos para o Dia à Dia
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -89,7 +94,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Mobiles
+                    Kits Veganos para Presente
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -97,29 +102,16 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Car & bike
+                    Outros Produtos
                   </Link>
                 </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Super Market
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Travel Cards
-                  </Link>
-                </li>
+
               </ul>
             </div>
+
+            {/*Nossas Politicas */}
             <div className="col-md-3 py-3">
-              <div className="h6">Policy</div>
+              <div className="h6">Nossas Políticas</div>
               <hr />
               <ul className="list-group list-group-flush">
                 <li className="list-group-item bg-dark text-white border-light">
@@ -127,7 +119,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Return Policy
+                    Política de Retorno
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -135,7 +127,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Terms Of Use
+                    Termos de Uso
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -143,7 +135,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Security
+                    Segurança
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -151,7 +143,7 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    Privacy
+                    Privacidade
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
@@ -159,94 +151,77 @@ const Footer = () => {
                     to="/"
                     className="text-decoration-none text-white stretched-link"
                   >
-                    EPR Compliance
+                    Compliance LGPD
                   </Link>
                 </li>
               </ul>
             </div>
+
+            {/*Endereço*/}
             <div className="col-md-3 py-3">
-              <div className="h6">Address</div>
+              <div className="h6">Endereço</div>
               <hr />
               <address>
-                <strong>Twitter, Inc.</strong>
+                <strong>ZN Eco Agro</strong>
                 <br />
-                1355 Market St, Suite 900
+                XXXX Judith Zumkeller, ApXX
                 <br />
-                San Francisco, CA 94103
+                São Paulo, SP 02422-020
                 <br />
-                <abbr title="Phone">P:</abbr> (123) 456-7890
+                <abbr title="Phone">Whats:</abbr> (11) XXXX-XXXX
               </address>
-              <div className="h6">Customer Care</div>
+              <div className="h6">Atendimento ao Consumidor</div>
               <hr />
-              <IconTelephone /> +1800 100 1000
+              <IconTelephone /> +11 XXX XXX XXX
               <br />
               <IconEnvelope /> info@email.com
             </div>
+
           </div>
         </div>
+
+        {/*Div da Row Parcerias / Propaganda / Presente / Data Atualização / Formas de Pagamento*/}
         <div className="container-fluid bg-secondary text-white text-center">
           <div className="row">
             <div className="col-md-2 py-2">
               <Link to="/" className="text-white text-decoration-none">
-                <IconBriefcase className="text-warning" /> Partner with us
+                <IconBriefcase className="text-warning" /> Parcerias
               </Link>
             </div>
             <div className="col-md-2 py-2">
               <Link to="/" className="text-white text-decoration-none">
-                <IconBadgeAd className="text-info" /> Advertise
+                <IconBadgeAd className="text-info" /> Anuncie conosco
               </Link>
             </div>
             <div className="col-md-2 py-2">
               <Link to="/" className="text-white text-decoration-none">
-                <IconGift className="text-dark" /> Gift
+                <IconGift className="text-dark" /> Presentes
               </Link>
             </div>
             <div className="col-md-3 py-2">
-              © 2009-{new Date().getFullYear()} React-E-Commerce.com
-            </div>
+              © 2022-{new Date().getFullYear()} www.znecoagro.com.br </div>
             <div className="col-md-3 py-2 bg-white">
               <img
-                src="../../images/payment/american_express.webp"
-                width="32"
-                alt="American Express"
+                src="../../images/payment/pix.svg"
+                width="52"
+                alt="PIX"
                 className="mr-2"
               />
-              <img
-                src="../../images/payment/maestro.webp"
-                width="32"
-                alt="Maestro"
-                className="mr-2"
-              />
-              <img
-                src="../../images/payment/netbanking.webp"
-                width="32"
-                alt="Net Banking"
-                className="mr-2"
-              />
-              <img
-                src="../../images/payment/paypal.webp"
-                width="32"
-                alt="Paypal"
-                className="mr-2"
-              />
-              <img
-                src="../../images/payment/rupay.webp"
-                width="32"
-                alt="Rupay"
-                className="mr-2"
-              />
-              <img
-                src="../../images/payment/upi.webp"
-                width="32"
-                alt="UPI"
-                className="mr-2"
-              />
+
               <img
                 src="../../images/payment/visa.webp"
-                width="32"
+                width="52"
                 alt="Visa"
                 className="mr-2"
               />
+
+              <img
+                src="../../images/payment/mastercard.svg"
+                width="52"
+                alt="Mastercard"
+                className="mr-2"
+              />
+
             </div>
           </div>
         </div>
