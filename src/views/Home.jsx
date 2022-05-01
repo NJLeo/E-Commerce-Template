@@ -13,15 +13,14 @@ import { ReactComponent as IconTools } from "bootstrap-icons/icons/tools.svg";
 
 import './Home.css';
 
-const Support = lazy(() => import("../components/Support"));
 const Banner = lazy(() => import("../components/carousel/Banner"));
 const Carousel = lazy(() => import("../components/carousel/Carousel"));
 const CardIcon = lazy(() => import("../components/card/CardIcon"));
-const CardLogin = lazy(() => import("../components/card/CardLogin"));
-const CardImage = lazy(() => import("../components/card/CardImage"));
-const CardDealsOfTheDay = lazy(() =>
-  import("../components/card/CardDealsOfTheDay")
-);
+
+//const Support = lazy(() => import("../components/Support"));
+//const CardLogin = lazy(() => import("../components/card/CardLogin"));
+//const CardImage = lazy(() => import("../components/card/CardImage"));
+//const CardDealsOfTheDay = lazy(() => import("../components/card/CardDealsOfTheDay"));
 
 class HomeView extends Component {
   components = {
@@ -68,31 +67,31 @@ class HomeView extends Component {
     return (
       <React.Fragment>
         <div
-         className="tudo"
+          className="tudo"
           alt="...">
 
-          {/* Carousel */}
+          {/* Carousel Grande Principal */}
           <Banner className="mb-3" id="carouselHomeBanner" data={data.banner} />
 
 
-          <div className="container-fluid bg-light mb-3">
+          <div className="container-fluid mb-3" id="divBotoesCards">
             <div className="row g-3">
-              <div className="col-md-9" >
-                <Carousel id="elect-product-category" className="mb-3" >
+               {/* Carousel de Botoes Cards */}
+               <Carousel id="elect-product-category" className="mb-3 " >
                   {carouselContent}
                 </Carousel>
-                <Support />
-              </div>
 
+              {/* <Support /> */}
               {/* Link de login e banner Propaganda */}
               {/* <div className="col-md-3">
-      <CardLogin className="mb-3" />
-      <CardImage src="../../images/banner/Watches.webp" to="promo" />
-    </div> */}
+                     <CardLogin className="mb-3" />
+                     <CardImage src="../../images/banner/Watches.webp" to="promo" />
+              </div> */}
+
             </div>
           </div>
 
-          {/* Deals of the day */}
+          {/* Carousel Deals of the day */}
           {/* <div className="container-fluid bg-light mb-3">
   <div className="row">
     <div className="col-md-12">
