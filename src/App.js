@@ -6,10 +6,17 @@ import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Dialog from '@material-ui/core/Dialog';
+import Button from '@material-ui/core/Button';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+
 import "./App.min.css";
 
 //import ModalContato from './components/modals/ModalContato';
-import {Button, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 //import Dialog from '@mui/material';
 
@@ -52,9 +59,9 @@ function App() {
     setOpen(true);
    };
 
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
 
   return (
