@@ -6,7 +6,7 @@ import { ReactComponent as IconBriefcase } from "bootstrap-icons/icons/briefcase
 import { ReactComponent as IconBadgeAd } from "bootstrap-icons/icons/badge-ad.svg";
 import { ReactComponent as IconGift } from "bootstrap-icons/icons/gift.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (

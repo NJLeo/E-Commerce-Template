@@ -19,8 +19,8 @@ const TopMenu = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -32,16 +32,18 @@ const TopMenu = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
 
-              {/* Botão Navegue */}
+              {/* Item do Navbar Botão Navegue */}
               <li className="nav-item dropdown">
+                
                 <button
                   className="btn nav-link dropdown-toggle font-weight-bold"
                   id="navbarDropdown"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Navegue
                 </button>
+
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/account/signin">
@@ -92,7 +94,9 @@ const TopMenu = () => {
                       500 Internal Server Error
                     </Link>
                   </li>
+                  
                 </ul>
+
               </li>
 
               {/*Kits Veganos Dia a Dia */}

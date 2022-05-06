@@ -36,11 +36,11 @@ class HomeView extends Component {
 
   render() {
     const iconProducts = data.iconProducts;
-    const imgsProducts = data.products;
+    //const imgsProducts = data.products;
 
     // chunk the products into the array of rows
     const rows = [...Array(Math.ceil(iconProducts.length / 4))];
-    const rows1 = [...Array(Math.ceil(imgsProducts.length / 4))];
+    //const rows1 = [...Array(Math.ceil(imgsProducts.length / 4))];
 
 
     // map the rows as div.row
@@ -48,9 +48,9 @@ class HomeView extends Component {
       iconProducts.slice(idx * 4, idx * 4 + 4)
     );
 
-    const productRows1 = rows.map((row, idx) =>
-      imgsProducts.slice(idx * 4, idx * 4 + 4)
-    );
+    // const productRows1 = rows.map((row, idx) =>
+    //   imgsProducts.slice(idx * 4, idx * 4 + 4)
+    // );
 
 
     const carouselContent = productRows.map((row, idx) => (
@@ -93,7 +93,7 @@ class HomeView extends Component {
                   {carouselContent}
                 </Carousel>
 
-              {/* <Support /> */}
+              
               {/* Link de login e banner Propaganda */}
               {/* <div className="col-md-3">
                      <CardLogin className="mb-3" />
@@ -103,22 +103,7 @@ class HomeView extends Component {
             </div>
           </div>
 
-          {/* Carousel Deals of the day */}
-          {/* <div className="container-fluid bg-light mb-3">
-  <div className="row">
-    <div className="col-md-12">
-      <CardDealsOfTheDay
-        endDate={Date.now() + 1000 * 60 * 60 * 14}
-        title="Deals of the Day"
-        to="/"
-      >
-        <Carousel id="elect-product-category1">
-          {carouselContent}
-        </Carousel>
-      </CardDealsOfTheDay>
-    </div>
-  </div>
-</div> */}
+         
 
           {/* Div com o Titulo das bolinhas */}
           <div className="bg-info bg-gradient p-3 text-center mb-3">

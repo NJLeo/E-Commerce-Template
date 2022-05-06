@@ -39,6 +39,8 @@ const CheckoutView = lazy(() => import("./views/cart/Checkout"));
 const DocumentationView = lazy(() => import("./views/Documentation"));
 const ContactUsView = lazy(() => import("./views/pages/ContactUs"));
 const SupportView = lazy(() => import("./views/pages/Support"));
+const ContactUsForm = lazy(() => import("./components/ContactUsForm"));
+
 
 const NotFoundView = lazy(() => import("./views/pages/404"));
 const InternalServerErrorView = lazy(() => import("./views/pages/500"));
@@ -51,13 +53,13 @@ const InternalServerErrorView = lazy(() => import("./views/pages/500"));
 function App() {
 
   //const [openModalContato, setOpenModalContato] = useState(false);
-  
+
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     console.log("chegou aqui");
     setOpen(true);
-   };
+  };
 
   const handleClose = () => {
     setOpen(false);
@@ -83,7 +85,7 @@ function App() {
             className="aeaeae"
             //onClick={() => setOpenModalContato(true)}
             onClick={handleClickOpen}
-            //onClick={() => console.log("clicou")}
+          //onClick={() => console.log("clicou")}
 
           > Contato
           </Button>
@@ -98,21 +100,28 @@ function App() {
               {"Use Google's location service?"}
             </DialogTitle>
             <DialogContent>
+            {/* <ContactUsForm/> */}
+           
+              
+
+
               <DialogContentText id="alert-dialog-description">
-                Let Google help apps determine location. This means sending anonymous
-                location data to Google, even when no apps are running.
+                { <ContactUsForm></ContactUsForm>}
               </DialogContentText>
+
             </DialogContent>
+
             <DialogActions>
-              <Button onClick={handleClose}>Disagree</Button>
               <Button onClick={handleClose} autoFocus>
                 Agree
               </Button>
             </DialogActions>
+            
           </Dialog>
 
 
         </Grid>
+
 
         {/* <ModalContato
           setOpenModalContato={() => setOpenModalContato(true)}
