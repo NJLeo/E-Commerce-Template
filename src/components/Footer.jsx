@@ -6,15 +6,7 @@ import { ReactComponent as IconBriefcase } from "bootstrap-icons/icons/briefcase
 import { ReactComponent as IconBadgeAd } from "bootstrap-icons/icons/badge-ad.svg";
 import { ReactComponent as IconGift } from "bootstrap-icons/icons/gift.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebookF,
-  faInstagram,
-  faYoutube,
-  faApple,
-  faWindows,
-  faAndroid,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -23,25 +15,9 @@ const Footer = () => {
         <div className="container-fluid bg-primary">
           <div className="row ">
             <div className="col-md-9 py-3 text-white">
-              Get connected with us on social networks!
+              Conecte-se com nossas redes sociais!
             </div>
             <div className="col-md-3 py-3 text-center text-white">
-              <Link to="/" title="Apple">
-                <FontAwesomeIcon icon={faApple} className="text-light mr-3" />
-              </Link>
-              <Link to="/" title="Windows">
-                <FontAwesomeIcon icon={faWindows} className="text-light mr-3" />
-              </Link>
-              <Link to="/" title="Android">
-                <FontAwesomeIcon icon={faAndroid} className="text-light mr-3" />
-              </Link>
-              |
-              <Link to="/" title="Twitter">
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  className="text-light ml-3 mr-3"
-                />
-              </Link>
               <Link to="/" title="Facebook">
                 <FontAwesomeIcon
                   icon={faFacebookF}

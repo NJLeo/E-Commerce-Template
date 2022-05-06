@@ -10,14 +10,14 @@ const Search = () => {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Search"
+          placeholder="Pesquisar"
           required
         />
         <label className="visually-hidden" htmlFor="search"></label>
         <button
           className="btn btn-primary text-white"
           type="submit"
-          aria-label="Search"
+          aria-label="Pesquisar"
         >
           <IconSearch />
         </button>

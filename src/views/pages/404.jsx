@@ -14,7 +14,7 @@ class NotFoundView extends Component {
           <IconAlertTriangleFill className="i-va text-warning" />
           404
         </div>
-        <h1 className="mb-3">Oops... Page Not Found!</h1>
+        <h1 className="mb-3">Oops... Página não encontrada!</h1>
         <div className="row justify-content-md-center">
           <div className="col-md-6">
             <Search />

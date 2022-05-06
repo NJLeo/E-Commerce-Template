@@ -45,12 +45,12 @@ const TopMenu = () => {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/account/signin">
-                      Sign In
+                      Entre em sua conta
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/account/signup">
-                      Sign Up
+                      Inscrever
                     </Link>
                   </li>
                   <li>
@@ -58,15 +58,16 @@ const TopMenu = () => {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/checkout">
-                      Checkout Page
+                      Finalizar Compra
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/contact-us">
-                      Contact Us
+                      Contato
                     </Link>
                   </li>
-                  <li>
+
+                  {/* <li>
                     <Link className="dropdown-item" to="/blog">
                       Blog
                     </Link>
@@ -75,13 +76,15 @@ const TopMenu = () => {
                     <Link className="dropdown-item" to="/blog/detail">
                       Blog Detail
                     </Link>
-                  </li>
+                  </li> */}
+
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
+
                   <li>
                     <Link className="dropdown-item" to="/fsafasf">
-                      404 Page Not Found
+                      404 Página não encontrada
                     </Link>
                   </li>
                   <li>
@@ -118,6 +121,8 @@ const TopMenu = () => {
                   Documentação
                 </Link>
               </li>
+
+              
             </ul>
           </div>
         </div>

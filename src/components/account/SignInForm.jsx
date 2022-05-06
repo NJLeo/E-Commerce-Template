@@ -3,20 +3,10 @@ import { Field, reduxForm } from "redux-form";
 import { compose } from "redux";
 import { Link } from "react-router-dom";
 import renderFormGroupField from "../../helpers/renderFormGroupField";
-import {
-  required,
-  maxLength20,
-  minLength8,
-  maxLengthMobileNo,
-  minLengthMobileNo,
-  digit,
+import { required, maxLength20, minLength8, maxLengthMobileNo, minLengthMobileNo, digit,
 } from "../../helpers/validation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebookF,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { ReactComponent as IconPhoneFill } from "bootstrap-icons/icons/phone-fill.svg";
 import { ReactComponent as IconShieldLockFill } from "bootstrap-icons/icons/shield-lock-fill.svg";
 
@@ -29,11 +19,11 @@ const SignInForm = (props) => {
       noValidate
     >
       <Field
-        name="mobileNo"
-        type="number"
-        label="Mobile no"
+        name="email"
+        type="text"
+        label="Email"
         component={renderFormGroupField}
-        placeholder="Mobile no without country code"
+        placeholder="Escreve seu endereço de email"
         icon={IconPhoneFill}
         validate={[required, maxLengthMobileNo, minLengthMobileNo, digit]}
         required={true}
@@ -44,7 +34,7 @@ const SignInForm = (props) => {
       <Field
         name="password"
         type="password"
-        label="Your password"
+        label="Sua senha"
         component={renderFormGroupField}
         placeholder="******"
         icon={IconShieldLockFill}
@@ -59,28 +49,26 @@ const SignInForm = (props) => {
         className="btn btn-primary btn-block mb-3"
         disabled={submitting}
       >
-        Log In
+        Entrar
       </button>
       <Link className="float-left" to="/account/signup" title="Sign Up">
-        Create your account
+        Crie sua conta
       </Link>
       <Link
         className="float-right"
         to="/account/forgotpassword"
         title="Forgot Password"
       >
-        Forgot password?
+        Esqueci a senha
       </Link>
       <div className="clearfix"></div>
       <hr></hr>
       <div className="row">
         <div className="col- text-center">
-          <p className="text-muted small">Or you can join with</p>
+          <p className="text-muted small">Ou entre usando:</p>
         </div>
+
         <div className="col- text-center">
-          <Link to="/" className="btn text-white bg-twitter mr-3">
-            <FontAwesomeIcon icon={faTwitter} />
-          </Link>
           <Link to="/" className="btn text-white mr-3 bg-facebook">
             <FontAwesomeIcon icon={faFacebookF} className="mx-1" />
           </Link>

@@ -36,12 +36,23 @@ class HomeView extends Component {
 
   render() {
     const iconProducts = data.iconProducts;
-    const rows = [...Array(Math.ceil(iconProducts.length / 4))];
+    const imgsProducts = data.products;
+
     // chunk the products into the array of rows
+    const rows = [...Array(Math.ceil(iconProducts.length / 4))];
+    const rows1 = [...Array(Math.ceil(imgsProducts.length / 4))];
+
+
+    // map the rows as div.row
     const productRows = rows.map((row, idx) =>
       iconProducts.slice(idx * 4, idx * 4 + 4)
     );
-    // map the rows as div.row
+
+    const productRows1 = rows.map((row, idx) =>
+      imgsProducts.slice(idx * 4, idx * 4 + 4)
+    );
+
+
     const carouselContent = productRows.map((row, idx) => (
       <div className={`carousel-item ${idx === 0 ? "active" : ""}`} key={idx}>
         <div className="row g-3">
@@ -63,6 +74,7 @@ class HomeView extends Component {
         </div>
       </div>
     ));
+
 
     return (
       <React.Fragment>
@@ -160,6 +172,7 @@ class HomeView extends Component {
                   <div className="text-center h6">Footwear</div>
                 </Link>
               </div>
+              
             </div>
           </div>
 
