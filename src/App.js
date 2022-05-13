@@ -2,23 +2,16 @@ import React, { Suspense, lazy, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
+import { Grid, Button } from "@material-ui/core";
+//import CloseIcon from '@material-ui/icons/Cl';
+
+
 import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-import Dialog from '@material-ui/core/Dialog';
-import Button from '@material-ui/core/Button';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import ModalContato from './components/modals/ModalContato';
 
 import "./App.min.css";
-
-//import ModalContato from './components/modals/ModalContato';
-import { Grid } from "@material-ui/core";
-
-//import Dialog from '@mui/material';
 
 //
 //const Header = lazy(() => import("./components/Header"));
@@ -39,32 +32,26 @@ const CheckoutView = lazy(() => import("./views/cart/Checkout"));
 const DocumentationView = lazy(() => import("./views/Documentation"));
 const ContactUsView = lazy(() => import("./views/pages/ContactUs"));
 const SupportView = lazy(() => import("./views/pages/Support"));
-const ContactUsForm = lazy(() => import("./components/ContactUsForm"));
-
+//const ContactUsForm = lazy(() => import("./components/ContactUsForm"));
 
 const NotFoundView = lazy(() => import("./views/pages/404"));
 const InternalServerErrorView = lazy(() => import("./views/pages/500"));
 
 
-
-// const BlogView = lazy(() => import("./views/blog/Blog"));
-// const BlogDetailView = lazy(() => import("./views/blog/Detail"));
-
 function App() {
 
-  //const [openModalContato, setOpenModalContato] = useState(false);
+  const [openModalContato, setOpenModalContato] = useState(false);
 
-  const [open, setOpen] = useState(false);
+  //const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
-    console.log("chegou aqui");
-    setOpen(true);
-  };
+  // const handleClickOpen = () => {
+  //   console.log("chegou aqui");
+  //   setOpen(true);
+  // };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
 
   return (
     <BrowserRouter>
@@ -83,14 +70,16 @@ function App() {
             variant="contained"
             color="primary"
             className="aeaeae"
-            //onClick={() => setOpenModalContato(true)}
-            onClick={handleClickOpen}
-          //onClick={() => console.log("clicou")}
+            onClick={() => setOpenModalContato(true)}
+            //onClick={handleClickOpen}
+            //onClick={() => console.log("clicou")}
 
           > Contato
           </Button>
 
-          <Dialog
+         
+
+          {/* <Dialog
             open={open}
             //onClose={handleClose}
             aria-labelledby="alert-dialog-title"
@@ -100,13 +89,12 @@ function App() {
               {"Use Google's location service?"}
             </DialogTitle>
             <DialogContent>
-            {/* <ContactUsForm/> */}
+            {/* <ContactUsForm/> 
            
-              
-
-
+            
               <DialogContentText id="alert-dialog-description">
-                { <ContactUsForm></ContactUsForm>}
+              {"Use Google's location service?"}
+              
               </DialogContentText>
 
             </DialogContent>
@@ -117,18 +105,19 @@ function App() {
               </Button>
             </DialogActions>
             
-          </Dialog>
+          </Dialog> */}
+
 
 
         </Grid>
 
 
-        {/* <ModalContato
+        <ModalContato
           setOpenModalContato={() => setOpenModalContato(true)}
           //establishmentInfo={establishmentInfo}
           openModalContato={openModalContato}
           closeModalContato={() => setOpenModalContato(false)}
-        /> */}
+        />
 
         <TopMenu />
 
@@ -171,7 +160,7 @@ function App() {
       </React.Fragment>
     </BrowserRouter>
   );
-}
+};
 
 
 
