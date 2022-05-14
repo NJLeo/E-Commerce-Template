@@ -1,6 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy, useState } from "react";
 import { Link } from "react-router-dom";
+import { Grid, Button } from "@material-ui/core";
+
 import Search from "./Search";
+
 import { ReactComponent as IconCart3 } from "bootstrap-icons/icons/cart3.svg";
 import { ReactComponent as IconPersonBadgeFill } from "bootstrap-icons/icons/person-badge-fill.svg";
 import { ReactComponent as IconStarFill } from "bootstrap-icons/icons/star-fill.svg";
@@ -12,14 +15,19 @@ import { ReactComponent as IconInfoCircleFill } from "bootstrap-icons/icons/info
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
+import ModalContato from '../components/modals/ModalContato';
+
 import './header.css';
 
-
+////////////////////////
 const Header = () => {
+
+  const [openModalContato, setOpenModalContato] = useState(false);
+
   return (
     <React.Fragment >
       <div id="headerTodo">
-      <header className="p-3 border-bottom">
+        <header className="p-3 border-bottom">
           <div className="container-fluid" id="headerBackgroundColor">
             <div className="row g-3">
 
@@ -38,7 +46,9 @@ const Header = () => {
                 <Search />
               </div>
 
+              {/* Junção Carrinho de Compras e Icone Usuario */}
               <div className="col-md-4">
+
                 {/* Icone Carrinho de Compras */}
                 <div className="position-relative d-inline mr-3">
                   <Link to="/cart" className="btn btn-primary">
@@ -48,6 +58,7 @@ const Header = () => {
                     </div>
                   </Link>
                 </div>
+
                 {/* Icone Perfil Usuario */}
                 <div className="btn-group">
 
@@ -104,6 +115,28 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
+
+                <Grid
+                  item xs={12} md={4}
+                  className="aeaeas"
+                  style={{
+                    width: '350px',
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className="aeaeae"
+                    onClick={() => setOpenModalContato(true)}
+                  > Contato
+                  </Button>
+                </Grid>
+
+                <ModalContato
+                  setOpenModalContato={() => setOpenModalContato(true)}
+                  openModalContato={openModalContato}
+                  closeModalContato={() => setOpenModalContato(false)}
+                />
 
                 {/* <Link to="/account/signin">Sign In</Link> |{" "}
               <Link to="/account/signup"> Sign Up</Link> */}

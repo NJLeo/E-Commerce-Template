@@ -3,13 +3,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import { Grid, Button } from "@material-ui/core";
-//import CloseIcon from '@material-ui/icons/Cl';
-
 
 import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ModalContato from './components/modals/ModalContato';
+//import ModalContato from './components/modals/ModalContato';
 
 import "./App.min.css";
 
@@ -40,87 +38,17 @@ const InternalServerErrorView = lazy(() => import("./views/pages/500"));
 
 function App() {
 
-  const [openModalContato, setOpenModalContato] = useState(false);
-
-  //const [open, setOpen] = useState(false);
-
-  // const handleClickOpen = () => {
-  //   console.log("chegou aqui");
-  //   setOpen(true);
-  // };
-
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
-
   return (
     <BrowserRouter>
       <React.Fragment>
 
-        <Header />
-
-        <Grid
-          item xs={12} md={4}
-          className="aeaeas"
-          style={{
-            width: '350px',
-          }}
-        >
-          <Button
-            variant="contained"
-            color="primary"
-            className="aeaeae"
-            onClick={() => setOpenModalContato(true)}
-            //onClick={handleClickOpen}
-            //onClick={() => console.log("clicou")}
-
-          > Contato
-          </Button>
-
-         
-
-          {/* <Dialog
-            open={open}
-            //onClose={handleClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-          >
-            <DialogTitle id="alert-dialog-title">
-              {"Use Google's location service?"}
-            </DialogTitle>
-            <DialogContent>
-            {/* <ContactUsForm/> 
-           
-            
-              <DialogContentText id="alert-dialog-description">
-              {"Use Google's location service?"}
-              
-              </DialogContentText>
-
-            </DialogContent>
-
-            <DialogActions>
-              <Button onClick={handleClose} autoFocus>
-                Agree
-              </Button>
-            </DialogActions>
-            
-          </Dialog> */}
-
-
-
-        </Grid>
-
-
-        <ModalContato
-          setOpenModalContato={() => setOpenModalContato(true)}
-          //establishmentInfo={establishmentInfo}
-          openModalContato={openModalContato}
-          closeModalContato={() => setOpenModalContato(false)}
-        />
-
+        {/* Cabeçalho */}
+        <Header/>
+        
+        {/* Menu com as opções */}
         <TopMenu />
 
+        {/* Algum efeito pra esperar*/}
         <Suspense
           fallback={
             <div className="text-white text-center mt-3">Loading...</div>
@@ -156,7 +84,9 @@ function App() {
           </Switch>
         </Suspense>
 
+        {/* Rodapé */}
         <Footer />
+
       </React.Fragment>
     </BrowserRouter>
   );

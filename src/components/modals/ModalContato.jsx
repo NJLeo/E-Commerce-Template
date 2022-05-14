@@ -4,16 +4,16 @@ import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, B
 import CloseIcon from '@material-ui/icons/Close';
 import "./modalContato.css";
 
-function ModalContato({ openContatoModal, closeContatoModal }) {
-    console.log("chegou");
+function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
+    console.log("chegou1");
 
-    const [emailData, setEmailData] = useState(null);
+    //const [emailData, setEmailData] = useState(null);
 
     return (
-        <>
+        <div>
             <Dialog
-                open={openContatoModal}
-                onClose={() => closeContatoModal()}
+                open={openModalContato}
+                onClose={() => closeModalContato()}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
                 fullWidth={true}
@@ -32,27 +32,27 @@ function ModalContato({ openContatoModal, closeContatoModal }) {
                         />
                     </button> */}
 
-                    {"Use Google's location service?"}
+                    {"Fale conosco"}
                 </DialogTitle>
                 <DialogContent>
                     {/* <ContactUsForm/> */}
 
 
                     <DialogContentText id="alert-dialog-description">
-                        {"Use Google's location service?"}
+                        {"Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email"}
 
                     </DialogContentText>
 
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onClick={closeContatoModal} autoFocus>
-                        Agree
+                    <Button onClick={closeModalContato} autoFocus>
+                        Fechar
                     </Button>
                 </DialogActions>
 
             </Dialog>
-        </>
+        </div>
     )
 }
 
