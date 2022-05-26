@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Grid } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import "./modalContato.css";
+import "./modalSignUp.css";
 
-function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
-    console.log("chegou modal contato");
+function ModalSignUp({ openModalSignUp, closeModalSignUp, setOpenModalSignUp }) {
+    console.log("chegou modal SignUp");
 
     return (
         <div>
             <Dialog
-                open={openModalContato}
-                onClose={() => closeModalContato()}
+                open={openModalSignUp}
+                onClose={() => closeModalSignUp()}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
                 fullWidth={true}
@@ -19,20 +19,18 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                 keepMounted
             >
                 <DialogTitle id="alert-dialog-title">
-                
-                    {"Fale conosco"}
+                   {"Sign Up"}
                 </DialogTitle>
                 <DialogContent>
-
+                 
                     <DialogContentText id="alert-dialog-description">
-                        {"Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email"}
-
+                        {"Form SignUp SignUp SignUp "}
                     </DialogContentText>
 
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onClick={closeModalContato} autoFocus>
+                    <Button onClick={closeModalSignUp} autoFocus>
                         Fechar
                     </Button>
                 </DialogActions>
@@ -42,4 +40,4 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
     )
 }
 
-export default ModalContato;
+export default ModalSignUp;

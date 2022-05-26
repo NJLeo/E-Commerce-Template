@@ -38,12 +38,12 @@ const Footer = () => {
         </div>
 
 
-        {/*Div da Row com as 4 colunas */}
-        <div className="container-fluid bg-dark text-white">
-          {/*Linha no footer com as 4 colunas */}
+        {/*Div da Row com as 4 colunas
+        {/* <div className="container-fluid bg-dark text-white">
+          {/*Linha no footer com as 4 colunas *
           <div className="row ">
 
-            {/*Zn Eco Agro Descrição*/}
+            *Zn Eco Agro Descrição*
             <div className="col-md-3 py-3">
               <div className="h6">ZN Eco Agro</div>
               <hr />
@@ -52,7 +52,7 @@ const Footer = () => {
               </p>
             </div>
 
-            {/*Produtos */}
+            {/*Produtos
             <div className="col-md-3 py-3">
               <div className="h6">Produtos</div>
               <hr />
@@ -85,7 +85,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/*Nossas Politicas */}
+            {/*Nossas Politicas *
             <div className="col-md-3 py-3">
               <div className="h6">Nossas Políticas</div>
               <hr />
@@ -133,7 +133,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/*Endereço*/}
+            {/*Endereço*
             <div className="col-md-3 py-3">
               <div className="h6">Endereço</div>
               <hr />
@@ -154,7 +154,7 @@ const Footer = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
         {/*Div da Row Parcerias / Propaganda / Presente / Data Atualização / Formas de Pagamento*/}
         <div className="container-fluid bg-secondary text-white text-center">

@@ -1,9 +1,25 @@
+#carouselHomeBanner{
+  background-color: carouselHomeBanner#f6ebc3;
+  size: 1000px;
+  color: #a1d79d;
+
+
+}
+
 .carouselHomeBanner{
-  background-color: black;
-  size: 100px;
+  background-color: carouselHomeBanner#f6ebc3;
+  size: 1000px;
+  color: #a1d79d;
+
+
 }
 
 .tudo{
-  background-color: rgb(41, 39, 39);
-  size: 100px;
+  background-color: rgb(56, 40, 40);
+  size: 1000px;
+}
+
+.tituloIconesRedondos{
+  background-color: #f6ebc3;
+  color: #c48013;
 }

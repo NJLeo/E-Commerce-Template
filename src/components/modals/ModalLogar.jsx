@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Grid } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import "./modalContato.css";
+import "./modalLogar.css";
 
-function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
-    console.log("chegou modal contato");
+function ModalLogar({ openModalLogar, closeModalLogar, setOpenModalLogar }) {
+    console.log("chegou modal logar");
 
     return (
         <div>
             <Dialog
-                open={openModalContato}
-                onClose={() => closeModalContato()}
+                open={openModalLogar}
+                onClose={() => closeModalLogar()}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
                 fullWidth={true}
@@ -19,20 +19,18 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                 keepMounted
             >
                 <DialogTitle id="alert-dialog-title">
-                
-                    {"Fale conosco"}
+                   {"Logar"}
                 </DialogTitle>
                 <DialogContent>
-
+                 
                     <DialogContentText id="alert-dialog-description">
-                        {"Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email Formulario de email"}
-
+                        {"Formulario Logar Formulario Logar Formulario Logar Formulario Logar Formulario Logar Formulario Logar Formulario Logar Formulario Logar Formulario Logar "}
                     </DialogContentText>
 
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onClick={closeModalContato} autoFocus>
+                    <Button onClick={closeModalLogar} autoFocus>
                         Fechar
                     </Button>
                 </DialogActions>
@@ -42,4 +40,4 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
     )
 }
 
-export default ModalContato;
+export default ModalLogar;

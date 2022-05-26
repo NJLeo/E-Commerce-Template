@@ -2,24 +2,42 @@ export const data = {
   
   //Banners do Carrousel 
   banner: [
+    // {
+    //   to: "/category",
+    //   img: "../../images/banner/bannerkitvegan1.png",
+    //   // img: "../../images/banner/Banner_2.webp",
+    //   title: "Kits Veganos para o Dia a Dia",
+    //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
+    // },
+    // {
+    //   to: "/category",
+    //   img: "../../images/banner/bannerkitvegan1.png",
+    //   // img: "../../images/banner/Banner_2.webp",
+    //   title: "Kits Veganos para o Dia a Dia",
+    //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
+    // },
+    // {
+    //   to: "/category",
+    //   img: "../../images/banner/Banner_3.webp",
+    //   title: "Kits Veganos para Presente",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    // },
     {
-      to: "/category",
-      img: "../../images/banner/bannerkitvegan1.png",
-      // img: "../../images/banner/Banner_2.webp",
-
-      title: "Kits Veganos para o Dia a Dia",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
-    },
-    {
-      to: "/category",
-      img: "../../images/banner/Banner_3.webp",
-      title: "Kits Veganos para Presente",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      to: "/category",
+      to: "/link",
       img: "../../images/banner/Banner_1.webp",
-      title: "Outros Produtos",
+      title: "Outros Produtos 1",
+      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
+    },
+    {
+      to: "/link",
+      img: "../../images/banner/Banner_2.webp",
+      title: "Outros Produtos 2",
+      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
+    },
+    {
+      to: "/link",
+      img: "../../images/banner/Banner_1.webp",
+      title: "Outros Produtos 3",
       description: " Praesent commodo cursus magna, vel scelerisque nisl.",
     },
   ],
@@ -92,6 +110,7 @@ export const data = {
     },
   ],
 
+  //Produtos
   products: [
     {
       id: 1,
@@ -163,6 +182,7 @@ export const data = {
     },
   ],
 
+  //Banner da parte de blog
   blogBanner: [
     {
       to: "/blog/detail",
@@ -184,6 +204,7 @@ export const data = {
     },
   ],
 
+  //Lista do Blog
   blogList: [
     {
       to: "/blog/detail",
@@ -218,4 +239,5 @@ export const data = {
       commentCount: 4,
     },
   ],
+
 };

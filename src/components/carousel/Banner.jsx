@@ -17,8 +17,8 @@ const Item = ({ item, index }) => (
 
 const Indicator = ({ item, index }) => (
   <li
-    data-target={`#${item}`}
-    data-slide-to={index}
+    data-bs-target={`#${item}`}
+    data-bs-slide-to={index}
     className={`${index === 0 ? "active" : ""}`}
   />
 );
@@ -28,46 +28,37 @@ const Banner = (props) => {
     <div
       id={props.id}
       className={`carousel slide ${props.className}`}
-      data-ride="carousel"
+      data-bs-ride="carousel"
       style={{ minHeight: 100 }}
     >
-
-      {/* Botoes do Carousel */}
       <ol className="carousel-indicators">
         {props.data.map((item, index) => (
           <Indicator item={props.id} index={index} key={index} />
         ))}
       </ol>
-      
-      {/* Imagens background carousel */}
       <div className="carousel-inner">
         {props.data.map((item, index) => (
           <Item item={item} index={index} key={index} />
         ))}
       </div>
-
-      {/* Setinha Voltar */}
       <a
         className="carousel-control-prev"
         href={`#${props.id}`}
         role="button"
-        data-slide="prev"
+        data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true" />
         <span className="sr-only">Previous</span>
       </a>
-
-      {/* Setinha Avançar */}
       <a
         className="carousel-control-next"
         href={`#${props.id}`}
         role="button"
-        data-slide="next"
+        data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true" />
         <span className="sr-only">Next</span>
       </a>
-
     </div>
   );
 };
