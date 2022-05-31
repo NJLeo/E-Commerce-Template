@@ -1,15 +1,25 @@
-.ModalLogar{
-    background-color: white;
-    display: none;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 200px;
-    top: 40px;
-    color: black;
+.modalFormContato {
+    /* width: fit-content; */
+    align-items: center;
+    max-width: 500px;
 }
 
-.nome{
-    background-color: white;
-    
+.formLabels {
+    border: 3px;
+    padding: 3px;
+}
+
+.formularioContato {
+    padding: 5px;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.itemsDivBotoes {
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }

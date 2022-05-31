@@ -1,7 +1,16 @@
-/* #headerBackgroundColor{
-  background-color: rgb(38, 31, 31);
-} */
+#headerTodo {
+  background-color: rgb(56, 40, 40);
+  padding: 10px;
+}
 
-#headerTodo{
-  background-color: rgb(55, 2, 2);
+
+.linhaBotoes {
+  vertical-align: middle
+}
+
+.modalFormContato {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+
 }

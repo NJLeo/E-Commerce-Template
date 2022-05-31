@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Grid } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
 import "./modalContato.css";
 
 function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
@@ -18,25 +17,31 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                 fullWidth={true}
                 maxWidth={'md'}
                 keepMounted
+                className='modalFormContato flex'
+                style={{ justifyContent: "space-between" }}
             >
-                <DialogTitle id="alert-dialog-title">
+                <DialogTitle id="alert-dialog-title" className='titulo'>
                     {"Fale conosco"}
                 </DialogTitle>
 
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        <form action="">
-                            <label htmlFor="nome" className='nome'> Nome: </label>
+                        <form action="" className='formularioContato'>
+                            <label htmlFor="nome" className='formLabels'> Nome:  </label>
                             <input type="text" id="nome" name="nome" placeholder='Digite seu nome: ' />
-                            <label htmlFor="email"> Email: </label>
+                            <br /><br />
+                            <label htmlFor="email" className='formLabels'> Email:  </label>
                             <input type="text" id="email" name="email" placeholder='Digite seu email: ' />
-                            <label htmlFor="mensagem"> Mensagem: </label>
+                            <br /><br />
+                            <label htmlFor="mensagem" className='formLabels'> Mensagem:  </label>
                             <textarea type="text" id="mensagem" name="mensagem" placeholder='Escreva sua mensagem: ' />
                         </form>
                     </DialogContentText>
                 </DialogContent>
 
-                <DialogActions>
+                <DialogActions
+                    className='itemsDivBotoes'
+                >
                     <Button onClick={closeModalContato} autoFocus>
                         Enviar
                     </Button>

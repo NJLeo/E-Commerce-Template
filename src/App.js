@@ -7,7 +7,6 @@ import { Grid, Button } from "@material-ui/core";
 import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-//import ModalContato from './components/modals/ModalContato';
 
 import "./App.min.css";
 
