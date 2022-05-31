@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <React.Fragment>
       <footer>
-        <div className="container-fluid bg-primary">
-          <div className="row ">
-            <div className="col-md-9 py-3 text-white">
+        <div className="container-fluid bg-dark" id="footerTodo">
+          <div className="row">
+            <div className="col-md-9 py-3 text-center text-white">
               Conecte-se com nossas redes sociais!
             </div>
             <div className="col-md-3 py-3 text-center text-white">
@@ -36,125 +36,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-
-        {/*Div da Row com as 4 colunas
-        {/* <div className="container-fluid bg-dark text-white">
-          {/*Linha no footer com as 4 colunas *
-          <div className="row ">
-
-            *Zn Eco Agro Descrição*
-            <div className="col-md-3 py-3">
-              <div className="h6">ZN Eco Agro</div>
-              <hr />
-              <p>
-                A ZN Eco Agro quer oferecer os melhores produtos Agroecológicos para você! Ao comprar conosco você irá ajudar expandir negócios mais sustentáveis do que grandes coorporações e participar de uma economia mais solidária. Tentamos sempre que possível fazer parcerias com outros movimentos, pessoas e negócios mais sustentáveis, disponibilizando produtos oriundos desse nicho mais alinhados à natureza e ao planeta.
-              </p>
-            </div>
-
-            {/*Produtos
-            <div className="col-md-3 py-3">
-              <div className="h6">Produtos</div>
-              <hr />
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Kits Veganos para o Dia à Dia
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Kits Veganos para Presente
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Outros Produtos
-                  </Link>
-                </li>
-
-              </ul>
-            </div>
-
-            {/*Nossas Politicas *
-            <div className="col-md-3 py-3">
-              <div className="h6">Nossas Políticas</div>
-              <hr />
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Política de Retorno
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Termos de Uso
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Segurança
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Privacidade
-                  </Link>
-                </li>
-                <li className="list-group-item bg-dark text-white border-light">
-                  <Link
-                    to="/"
-                    className="text-decoration-none text-white stretched-link"
-                  >
-                    Compliance LGPD
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/*Endereço*
-            <div className="col-md-3 py-3">
-              <div className="h6">Endereço</div>
-              <hr />
-              <address>
-                <strong>ZN Eco Agro</strong>
-                <br />
-                XXXX Judith Zumkeller, ApXX
-                <br />
-                São Paulo, SP 02422-020
-                <br />
-                <abbr title="Phone">Whats:</abbr> (11) XXXX-XXXX
-              </address>
-              <div className="h6">Atendimento ao Consumidor</div>
-              <hr />
-              <IconTelephone /> +11 XXX XXX XXX
-              <br />
-              <IconEnvelope /> info@email.com
-            </div>
-
-          </div>
-        </div> */}
 
         {/*Div da Row Parcerias / Propaganda / Presente / Data Atualização / Formas de Pagamento*/}
         <div className="container-fluid bg-secondary text-white text-center">

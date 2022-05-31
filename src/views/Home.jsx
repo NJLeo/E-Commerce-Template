@@ -89,24 +89,31 @@ class HomeView extends Component {
 
     ));
 
+
+
     //Antes disso são configurações 
     return (
+
+      
       <React.Fragment>
         {/* <div className="d-flex justify-content-center">
           <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
         </div> */}
 
-        <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
+        {/* <Banner className="mb-1 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} /> */}
 
 
         <div
           className="tudo"
           alt="...">
 
+          
+
+
           {/* Carousel Grande Principal */} 
-          {/* <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center">
             <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
-          </div> */}
+          </div>
 
 
           {/* <div className="container-fluid mb-3" id="divBotoesCards">
@@ -120,57 +127,55 @@ class HomeView extends Component {
 
 
           {/* Div com o Titulo das bolinhas */}
-          <div className="tituloIconesRedondos p-3 text-center mb-3 "
-
-          >
-            <h4 className="m-0">Conheça diferentes produtos </h4>
+          <div className="tituloIconesRedondos p-3 text-center mb-3 ">
+            <h4 className="m-0"> Conheça diferentes produtos </h4>
           </div>
 
           {/* Container das 4 bolinhas paralelas */}
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
 
-              <div className="col-md-3">
+              <div className="col-5">
                 <Link to="/" className="text-decoration-none">
                   <img
                     src="../../images/category/male.webp"
                     className="img-fluid rounded-circle"
                     alt="..."
                   />
-                  <div className="text-center h6">Men's Clothing</div>
+                  <div className="text-center h6 categoryIconText">Higiene Bucal</div>
                 </Link>
               </div>
 
-              <div className="col-md-3">
+              <div className="col-5">
                 <Link to="/" className="text-decoration-none">
                   <img
                     src="../../images/category/female.webp"
                     className="img-fluid rounded-circle"
                     alt="..."
                   />
-                  <div className="text-center h6">Women's Clothing</div>
+                  <div className="text-center h6 categoryIconText">Doces e Geleias</div>
                 </Link>
               </div>
 
-              <div className="col-md-3">
+              <div className="col-5">
                 <Link to="/" className="text-decoration-none">
                   <img
                     src="../../images/category/smartwatch.webp"
                     className="img-fluid rounded-circle"
                     alt="..."
                   />
-                  <div className="text-center h6">Smartwatch</div>
+                  <div className="text-center h6 categoryIconText"  >Licores e Kombuchas</div>
                 </Link>
               </div>
 
-              <div className="col-md-3">
+              <div className="col-5">
                 <Link to="/" className="text-decoration-none">
                   <img
                     src="../../images/category/footwear.webp"
                     className="img-fluid rounded-circle"
                     alt="..."
                   />
-                  <div className="text-center h6">Footwear</div>
+                  <div className="text-center h6 categoryIconText">Cereais e Matinais</div>
                 </Link>
               </div>
 
