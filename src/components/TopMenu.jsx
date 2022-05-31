@@ -8,14 +8,15 @@ const TopMenu = () => {
     <React.Fragment>
 
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-0">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark topMenu p-1">
+        <div className="container-fluid  text-center">
 
-          <Link className="navbar-brand" to="/">
-            ZN Eco Agro
-          </Link>
+          <Link className="navbar-brand text-center" to="/">
+            EcoAgro ZN
+          </Link> 
 
-          {/* Botão Quando Diminui o Menu pra Lista */}
+
+          {/* Toggler da Navbar Interna */}
           <button
             className="navbar-toggler"
             type="button"
@@ -28,13 +29,13 @@ const TopMenu = () => {
             <span className="navbar-toggler-icon" />
           </button>
 
-          {/* Navbar */}
+          {/* Navbar Interna */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul className="navbar-nav">
 
-              {/* Item do Navbar Botão Navegue */}
-              <li className="nav-item dropdown">
-                
+              <li className="nav-item dropdown ">
+
                 <button
                   className="btn nav-link dropdown-toggle font-weight-bold"
                   id="navbarDropdown"
@@ -44,7 +45,7 @@ const TopMenu = () => {
                   Navegue
                 </button>
 
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/account/signin">
                       Entre em sua conta
@@ -69,17 +70,6 @@ const TopMenu = () => {
                     </Link>
                   </li>
 
-                  {/* <li>
-                    <Link className="dropdown-item" to="/blog">
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/blog/detail">
-                      Blog Detail
-                    </Link>
-                  </li> */}
-
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
@@ -94,10 +84,11 @@ const TopMenu = () => {
                       500 Internal Server Error
                     </Link>
                   </li>
-                  
+
                 </ul>
 
               </li>
+
 
               {/*Kits Veganos Dia a Dia */}
               <li className="nav-item">
@@ -119,16 +110,19 @@ const TopMenu = () => {
                   Outros Produtos
                 </Link>
               </li>
-              
+
               <li className="nav-item">
                 <Link className="nav-link" to="/documentation">
                   Documentação
                 </Link>
               </li>
 
-              
+              {/* Item do Navbar Botão Navegue */}
+
+
             </ul>
           </div>
+
         </div>
       </nav>
     </React.Fragment>

@@ -1,3 +1,7 @@
+.tudo{
+  background-color: rgb(56, 40, 40);
+}
+
 #carouselHomeBanner{
   background-color: carouselHomeBanner#f6ebc3;
   size: 1000px;
@@ -12,10 +16,7 @@
 
 }
 
-.tudo{
-  background-color: rgb(56, 40, 40);
-  size: 1000px;
-}
+
 
 .tituloIconesRedondos{
   background-color: #f6ebc3;
@@ -24,4 +25,9 @@
 
 .categoryIconText {
   color:#f6ebc3;
+  text-size-adjust: 10px;
+}
+
+.rounded-circle{
+  max-width: 150px;
 }

@@ -25,10 +25,11 @@ const Header = () => {
 
         {/* Div com 2 logos */}
         <div className="text-center p-2">
-          <Link to="/">
+          <Link to="/" >
             <img
               alt="logo"
               src="../../images/222-removebg-preview.png"
+              className="logoCasa"
             />
           </Link>
           <Link to="/">

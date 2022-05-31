@@ -96,34 +96,15 @@ class HomeView extends Component {
 
       
       <React.Fragment>
-        {/* <div className="d-flex justify-content-center">
-          <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
-        </div> */}
-
-        {/* <Banner className="mb-1 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} /> */}
-
 
         <div
           className="tudo"
-          alt="...">
-
-          
-
+          alt="...">     
 
           {/* Carousel Grande Principal */} 
           <div className="d-flex justify-content-center">
             <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
           </div>
-
-
-          {/* <div className="container-fluid mb-3" id="divBotoesCards">
-            <div className="row g-3">
-             
-              <Carousel id="elect-product-category" className="mb-3 " >
-                {carouselContent}
-              </Carousel>
-            </div>
-          </div> */}
 
 
           {/* Div com o Titulo das bolinhas */}
@@ -133,7 +114,7 @@ class HomeView extends Component {
 
           {/* Container das 4 bolinhas paralelas */}
           <div className="container">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center text-center ">
 
               <div className="col-5">
                 <Link to="/" className="text-decoration-none">
@@ -152,6 +133,7 @@ class HomeView extends Component {
                     src="../../images/category/female.webp"
                     className="img-fluid rounded-circle"
                     alt="..."
+                    
                   />
                   <div className="text-center h6 categoryIconText">Doces e Geleias</div>
                 </Link>
