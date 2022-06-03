@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button} from '@material-ui/core';
 
-import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Grid } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
 import "./modalLogar.css";
 
 function ModalLogar({ openModalLogar, closeModalLogar, setOpenModalLogar }) {
@@ -15,7 +14,7 @@ function ModalLogar({ openModalLogar, closeModalLogar, setOpenModalLogar }) {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
                 fullWidth={true}
-                maxWidth={'md'}
+                maxWidth={'sm'}
                 keepMounted
             >
                 <DialogTitle id="alert-dialog-title">

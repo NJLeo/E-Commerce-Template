@@ -61,7 +61,7 @@ const Header = () => {
                 </Button>
 
                 <ModalSignUp
-                  className="ModalSignUp"
+                  className="modalSignUp"
                   setOpenModalSignUp={() => setOpenModalSignUp(true)}
                   openModalSignUp={openModalSignUp}
                   closeModalSignUp={() => setOpenModalSignUp(false)}
@@ -71,6 +71,7 @@ const Header = () => {
 
               {/* Botão Contato com Modal */}
               <div className="col botaoDaLinha">
+
                 <Button
                   variant="contained"
                   color="primary"
@@ -80,11 +81,11 @@ const Header = () => {
                 </Button>
 
                 <ModalContato
+                  className='modalFormContato'
                   setOpenModalContato={() => setOpenModalContato(true)}
                   openModalContato={openModalContato}
                   closeModalContato={() => setOpenModalContato(false)}
-                  className='modalFormContato'
-                  style={{ color: "notworking" }}
+                  // style={{ color: "notworking" }}
                 />
 
 
@@ -96,7 +97,7 @@ const Header = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  className="ModalLogara"
+                  className="modalLogar"
                   onClick={() => setOpenModalLogar(true)}
                 > Logar
                 </Button>

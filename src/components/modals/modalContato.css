@@ -1,10 +1,10 @@
-.ModalContato{
-    background-color: white;
-    display: none;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 200px;
-    top: 40px;
-    color: black;
+.modalFormContato{
+    /* align-self: center;
+    min-width: "300000px";
+    width: "90%"; */
+}
+
+#alert-dialog-description{
+    color: darkred;
+    text-align: center;
 }

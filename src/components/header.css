@@ -3,18 +3,14 @@
   padding: 10px;
 }
 
+.logoCasa{
+  max-width: 125px;
+}
 
 .linhaBotoes {
   vertical-align: middle
 }
 
-.modalFormContato {
-  text-align: center;
-  align-items: center;
-  align-content: center;
-
-}
-
-.logoCasa{
-  max-width: 125px;
-}
+/* .modalFormContato {
+    align-self: center;
+} */
