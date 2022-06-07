@@ -1,8 +1,7 @@
-import React, { Suspense, lazy, useState } from "react";
+import React, { Suspense, lazy} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import { Grid, Button } from "@material-ui/core";
 
 import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
@@ -11,8 +10,8 @@ import Footer from "./components/Footer";
 import "./App.min.css";
 
 //
-//const Header = lazy(() => import("./components/Header"));
-//const TopMenu = lazy(() => import("./components/TopMenu"));
+// const Header = lazy(() => import("./components/Header"));
+// const TopMenu = lazy(() => import("./components/TopMenu"));
 const HomeView = lazy(() => import("./views/Home"));
 const SignInView = lazy(() => import("./views/account/SignIn"));
 const SignUpView = lazy(() => import("./views/account/SignUp"));
@@ -90,8 +89,5 @@ function App() {
     </BrowserRouter>
   );
 };
-
-
-
 
 export default App;

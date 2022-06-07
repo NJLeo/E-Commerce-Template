@@ -2,43 +2,37 @@ export const data = {
   
   //Banners do Carrousel 
   banner: [
-    {
-      to: "/category",
-      img: "../../images/banner/bannerkitvegan1.png",
-      title: "Kits Veganos para o Dia a Dia",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
-    },
     // {
     //   to: "/category",
     //   img: "../../images/banner/bannerkitvegan1.png",
-    //   // img: "../../images/banner/Banner_2.webp",
     //   title: "Kits Veganos para o Dia a Dia",
     //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
     // },
+    {
+      to: "/link",
+      img: "../../images/banner/banner1.png",
+      title: "Outros Produtos 1",
+      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
+    },
+    {
+      to: "/link",
+      img: "../../images/banner/banner2.png",
+      title: "Outros Produtos 2",
+      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
+    },
+    {
+      to: "/link",
+      img: "../../images/banner/banner1.png",
+      title: "Outros Produtos 3",
+      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
+    },
+    
     // {
     //   to: "/category",
     //   img: "../../images/banner/Banner_3.webp",
     //   title: "Kits Veganos para Presente",
     //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     // },
-    {
-      to: "/link",
-      img: "../../images/banner/ultra_action_everest_164g.jpg",
-      title: "Outros Produtos 1",
-      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
-    },
-    {
-      to: "/link",
-      img: "../../images/banner/Banner_2.webp",
-      title: "Outros Produtos 2",
-      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
-    },
-    {
-      to: "/link",
-      img: "../../images/banner/Banner_1.webp",
-      title: "Outros Produtos 3",
-      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
-    },
   ],
 
   //Icones dos Tipos de Produto

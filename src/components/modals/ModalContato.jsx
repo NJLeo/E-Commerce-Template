@@ -6,6 +6,26 @@ import "./modalContato.css";
 function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
     console.log("Ativou Modal contato");
 
+    const [contactInfo, setContactInfo] = useState({
+        nome: '',
+        email: '',
+        mensagem: ''
+    });
+
+    function handleContactFormInputChange(event){
+        //contactInfo.nome;
+        //contactInfo['nome'];
+        contactInfo[event.target.name] = event.target.value;
+        setContactInfo(contactInfo);
+        //console.log('funcao handleContactFormInputChange e qual valor:', contactInfo);
+    }
+
+    function handleSendEmail(event){
+        //previne a ação default de enviar por html os dados crus
+        event.preventDefault();
+        console.log('func Send email com o valor do contact info: ', contactInfo);
+    }
+
     return (
         <div>
             <Dialog
@@ -30,13 +50,13 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                     </DialogContentText>
                     <form action="" className='formularioContato'>
                         <label htmlFor="nome" className='formLabels'> Nome:  </label>
-                        <input type="text" id="nome" name="nome" placeholder='Digite seu nome: ' />
+                        <input type="text" id="nome" name="nome" placeholder='Digite seu nome: ' onChange={handleContactFormInputChange} />
                         <br /><br />
                         <label htmlFor="email" className='formLabels'> Email:  </label>
-                        <input type="text" id="email" name="email" placeholder='Digite seu email: ' />
+                        <input type="text" id="email" name="email" placeholder='Digite seu email: ' onChange={handleContactFormInputChange} />
                         <br /><br />
                         <label htmlFor="mensagem" className='formLabels'> Mensagem:  </label>
-                        <textarea type="text" id="mensagem" name="mensagem" placeholder='Escreva sua mensagem: ' />
+                        <textarea type="text" id="mensagem" name="mensagem" placeholder='Escreva sua mensagem: ' onChange={handleContactFormInputChange} />
                     </form>
 
                 </DialogContent>
@@ -44,7 +64,7 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                 <DialogActions
                     className='itemsDivBotoes'
                 >
-                    <Button onClick={closeModalContato} autoFocus>
+                    <Button onClick={handleSendEmail} autoFocus>
                         Enviar
                     </Button>
                     <Button onClick={closeModalContato} autoFocus>

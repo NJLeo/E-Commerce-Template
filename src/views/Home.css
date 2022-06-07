@@ -2,21 +2,20 @@
   background-color: rgb(56, 40, 40);
 }
 
-#carouselHomeBanner{
-  background-color: carouselHomeBanner#f6ebc3;
-  size: 1000px;
-  color: #a1d79d;
-
-}
-
 .carouselHomeBanner{
-  background-color: carouselHomeBanner#f6ebc3;
-  size: 1000px;
+  background-color: #f6ebc3;
   color: #a1d79d;
+}
+
+#carouselHomeBanner{
+  max-width: 900px;
 
 }
 
+/* .divCarousel {
+  max-width: 1000px;
 
+} */
 
 .tituloIconesRedondos{
   background-color: #f6ebc3;

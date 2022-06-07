@@ -86,10 +86,7 @@ class HomeView extends Component {
 
       </div>
 
-
     ));
-
-
 
     //Antes disso são configurações 
     return (
@@ -102,7 +99,7 @@ class HomeView extends Component {
           alt="...">     
 
           {/* Carousel Grande Principal */} 
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center" >
             <Banner className="mb-3 carouselHomeBanner" id="carouselHomeBanner" data={data.banner} />
           </div>
 

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button } from '@material-ui/core';
 
-import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Grid } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
 import "./modalSignUp.css";
 
 function ModalSignUp({ openModalSignUp, closeModalSignUp, setOpenModalSignUp }) {
