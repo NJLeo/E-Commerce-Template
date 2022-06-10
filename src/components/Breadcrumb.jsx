@@ -11,11 +11,11 @@ const Breadcrumb = () => {
         </li>
         <li className="breadcrumb-item">
           <Link to="/" title="Men">
-            Men
+            Categoria
           </Link>
         </li>
         <li className="breadcrumb-item active" aria-current="page">
-          T-Shirts
+          Nome Produto
         </li>
       </ol>
     </nav>

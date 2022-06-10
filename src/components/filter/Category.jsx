@@ -5,37 +5,27 @@ const FilterCategory = (props) => {
   return (
     <div className="card mb-3">
       <div className="card-header font-weight-bold text-uppercase">
-        Categories
+        Categorias
       </div>
       <ul className="list-group list-group-flush">
         <li className="list-group-item">
           <Link to="/" className="text-decoration-none stretched-link">
-            Clothing
+            Kits para Presente
           </Link>
         </li>
         <li className="list-group-item">
           <Link to="/" className="text-decoration-none stretched-link">
-            Leather Bag
+            Kits Dia-a-Dia
           </Link>
         </li>
         <li className="list-group-item">
           <Link to="/" className="text-decoration-none stretched-link">
-            Trausers
+            Outros Produtos
           </Link>
         </li>
         <li className="list-group-item">
           <Link to="/" className="text-decoration-none stretched-link">
-            Sweater & Cardigans
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            High Heels
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Coats & Jackets
+            Documentação
           </Link>
         </li>
       </ul>

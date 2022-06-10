@@ -66,7 +66,7 @@ class ProductListView extends Component {
         >
           <div className="container text-center">
             <span className="display-5 px-3 bg-white rounded shadow">
-              T-Shirts
+              Nome Produto
             </span>
           </div>
         </div>
@@ -88,7 +88,7 @@ class ProductListView extends Component {
                 <div className="col-md-8">
                   <span className="align-middle font-weight-bold">
                     {this.state.totalItems} results for{" "}
-                    <span className="text-warning">"t-shirts"</span>
+                    <span className="text-warning">"produto procurado"</span>
                   </span>
                 </div>
                 <div className="col-md-4">

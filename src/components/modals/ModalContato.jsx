@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button } from '@material-ui/core';
+import axios from "axios";
 
 import "./modalContato.css";
+// import { response } from 'express';
 
 function ModalContato({ openModalContato, closeModalContato, setOpenModalContato }) {
-    console.log("Ativou Modal contato");
+    //console.log("Ativou Modal contato");
 
     const [contactInfo, setContactInfo] = useState({
         nome: '',
@@ -24,6 +26,25 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
         //previne a ação default de enviar por html os dados crus
         event.preventDefault();
         console.log('func Send email com o valor do contact info: ', contactInfo);
+        send();
+    }
+
+    function send(){
+        console.log(' func send');
+        const formData = new FormData();
+        console.log(' valor Formdata', formData);
+
+        Object.keys(contactInfo).forEach(key => formData.append(key, contactInfo[key]));
+        axios.post('http://localhost:3000/send', formData, {
+            headers: {
+                'Content-Type': `multipart/form-data;boundary=${formData._boundary}`
+            }
+        })
+        .then(res => {
+            alert(res.data);
+            console.log('* .then com alert', res.data);
+        });
+            
     }
 
     return (

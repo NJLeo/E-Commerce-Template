@@ -7,9 +7,10 @@ import { ReactComponent as IconChevronLeft } from "bootstrap-icons/icons/chevron
 import { ReactComponent as IconTruck } from "bootstrap-icons/icons/truck.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
-const CouponApplyForm = lazy(() =>
-  import("../../components/others/CouponApplyForm")
-);
+
+// const CouponApplyForm = lazy(() =>
+//   import("../../components/others/CouponApplyForm")
+// );
 
 class CartView extends Component {
   constructor(props) {
@@ -184,7 +185,7 @@ class CartView extends Component {
             <div className="col-md-3">
               <div className="card mb-3">
                 <div className="card-body">
-                  <CouponApplyForm onSubmit={this.onSubmitApplyCouponCode} />
+                  {/* <CouponApplyForm onSubmit={this.onSubmitApplyCouponCode} /> */}
                 </div>
               </div>
               <div className="card">
