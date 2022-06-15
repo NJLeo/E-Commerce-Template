@@ -6,7 +6,7 @@ import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, B
 import "./modalLogar.css";
 
 function ModalLogar({ openModalLogar, closeModalLogar, setOpenModalLogar }) {
-    console.log("chegou modal logar");
+    //console.log("chegou modal logar");
 
     return (
         <div>

@@ -10,14 +10,17 @@ const app =  express();
 app.use(require('cors')());
 app.use(express.json());
 
-app.post('/send', (req, res, next) => {
+const upload = require('multer')();
+
+
+app.post('/send', upload.single('anexo'), (req, res, next) => {
     const nome = req.body.nome;
     const email = req.body.email;
     const mensagem = req.body.mensagem;
     //const anexo = req.file;
     
     //res.json(req.body);
-    res.json.toString({
+    res.json({
         nome,
         email,
         mensagem,

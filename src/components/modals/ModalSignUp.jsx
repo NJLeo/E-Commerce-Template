@@ -4,7 +4,7 @@ import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, B
 import "./modalSignUp.css";
 
 function ModalSignUp({ openModalSignUp, closeModalSignUp, setOpenModalSignUp }) {
-    console.log("chegou modal SignUp");
+    //console.log("chegou modal SignUp");
 
     return (
         <div>
