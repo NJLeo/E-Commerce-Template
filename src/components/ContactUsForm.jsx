@@ -31,6 +31,7 @@ const ContactUsForm = (props) => {
     >
       {/* Primeira linha do Formulario */}
       <div className="row">
+
         <div className="col-md-6">
           <Field
             name="name"
@@ -46,6 +47,7 @@ const ContactUsForm = (props) => {
             className="mb-3"
           />
         </div>
+
         <div className="col-md-6">
           <Field
             name="company"
@@ -60,6 +62,7 @@ const ContactUsForm = (props) => {
             className="mb-3"
           />
         </div>
+        
       </div>
 
       {/* Segunda linha do Formulario */}
@@ -136,7 +139,8 @@ const ContactUsForm = (props) => {
 };
 
 export default compose(
-  reduxForm({
-    form: "demo1",
-  })
+    console.log("passou aqui ***"),
+    reduxForm({
+      form: "demo1",
+    })
 )(ContactUsForm);

@@ -1,6 +1,9 @@
-import React, { Suspense, lazy, useState } from "react";
+//import React, { Suspense, lazy, useState } from "react";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
-import { Grid, Button } from "@material-ui/core";
+//import { Grid, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 import ModalContato from '../components/modals/ModalContato';
 import ModalLogar from '../components/modals/ModalLogar';
@@ -47,27 +50,7 @@ const Header = () => {
 
           <div className="container d-flex justify-content-center">
 
-            <div className="row align-items-center">
-
-              {/* Botão Criar Conta com Modal */}
-              <div className="col botaoDaLinha">
-
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className="ModalSignUp"
-                  onClick={() => setOpenModalSignUp(true)}
-                > Criar Conta
-                </Button>
-
-                <ModalSignUp
-                  className="modalSignUp"
-                  setOpenModalSignUp={() => setOpenModalSignUp(true)}
-                  openModalSignUp={openModalSignUp}
-                  closeModalSignUp={() => setOpenModalSignUp(false)}
-                />
-
-              </div>
+            <div className="row align-items-center">          
 
               {/* Botão Contato com Modal */}
               <div className="col botaoDaLinha">
@@ -87,7 +70,6 @@ const Header = () => {
                   closeModalContato={() => setOpenModalContato(false)}
                   // style={{ color: "notworking" }}
                 />
-
 
               </div>
 
@@ -110,6 +92,26 @@ const Header = () => {
                 />
               </div>
 
+              {/* Botão Criar Conta com Modal */}
+              <div className="col botaoDaLinha">
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="ModalSignUp"
+                  onClick={() => setOpenModalSignUp(true)}
+                > Criar Conta
+                </Button>
+
+                <ModalSignUp
+                  className="modalSignUp"
+                  setOpenModalSignUp={() => setOpenModalSignUp(true)}
+                  openModalSignUp={openModalSignUp}
+                  closeModalSignUp={() => setOpenModalSignUp(false)}
+                />
+
+              </div>
+
             </div>
           </div>
 
@@ -118,5 +120,6 @@ const Header = () => {
       </div>
     </React.Fragment>
   );
+  
 };
 export default Header;

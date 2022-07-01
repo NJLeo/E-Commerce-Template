@@ -1,4 +1,6 @@
-import React, { Component, lazy } from "react";
+import React, { Component } from "react";
+//import React, { Component, lazy } from "react";
+
 import { Link } from "react-router-dom";
 import { ReactComponent as IconHeartFill } from "bootstrap-icons/icons/heart-fill.svg";
 import { ReactComponent as IconTrash } from "bootstrap-icons/icons/trash.svg";

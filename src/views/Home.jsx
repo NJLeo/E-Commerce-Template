@@ -13,8 +13,8 @@ import './Home.css';
 
 //
 const Banner = lazy(() => import("../components/carousel/Banner"));
-const Carousel = lazy(() => import("../components/carousel/Carousel"));
 const CardIcon = lazy(() => import("../components/card/CardIcon"));
+//const Carousel = lazy(() => import("../components/carousel/Carousel"));
 // const Support = lazy(() => import("../components/Support"));
 // const CardLogin = lazy(() => import("../components/card/CardLogin"));
 // const CardImage = lazy(() => import("../components/card/CardImage"));
@@ -55,38 +55,38 @@ class HomeView extends Component {
     // );
 
     //Const Carousel Cards de Icones de produtos
-    const carouselContent = productRows.map((row, idx) => (
+    // const carouselContent = productRows.map((row, idx) => (
       
-      // Uma div de um botão gerado pra cada mapeamento
-      <div className={`carousel-item ${idx === 0 ? "active" : ""}`} key={idx}>
+    //   // Uma div de um botão gerado pra cada mapeamento
+    //   <div className={`carousel-item ${idx === 0 ? "active" : ""}`} key={idx}>
         
-        {/* Linha pra definir borda de cada botao */}
-        <div className="row g-3">
+    //     {/* Linha pra definir borda de cada botao */}
+    //     <div className="row g-3">
 
 
-          {row.map((product, idx) => {
-            const ProductImage = this.components[product.img];
-            return (
-              <div key={idx} className="col-md-3">
-                <CardIcon
-                  title={product.title}
-                  text={product.text}
-                  tips={product.tips}
-                  to={product.to}
-                >
-                  <ProductImage className={product.cssClass} />
-                </CardIcon>
-              </div>
-            );
-          })}
+    //       {row.map((product, idx) => {
+    //         const ProductImage = this.components[product.img];
+    //         return (
+    //           <div key={idx} className="col-md-3">
+    //             <CardIcon
+    //               title={product.title}
+    //               text={product.text}
+    //               tips={product.tips}
+    //               to={product.to}
+    //             >
+    //               <ProductImage className={product.cssClass} />
+    //             </CardIcon>
+    //           </div>
+    //         );
+    //       })}
 
 
-        </div>
+    //     </div>
 
 
-      </div>
+    //   </div>
 
-    ));
+    // ));
 
     //Antes disso são configurações 
     return (
