@@ -27,22 +27,24 @@ const Header = () => {
       >
 
         {/* Div com 2 logos */}
-        <div className="text-center p-2">
-          <Link to="/" >
+         <div className="text-center p-2">
+          {/* <Link to="/" >
             <img
               alt="logo"
-              src="../../images/222-removebg-preview.png"
+              src="../build/images/logo.svg"
+              // src="../../images/222-removebg-preview.png"
               className="logoCasa"
             />
-          </Link>
+          </Link>  */}
+          
           <Link to="/">
             <img
               alt="logo"
-              src="../../images/escritologo-removebg-preview.png"
-            //src="../../images/nortenaturalcerealista.png "
-            //src="../../images/222-removebg-preview.png"
+              src="../../images/logo/logo.jpg"
+              //src="../../images/escritologo-removebg-preview.png"
             />
           </Link>
+
         </div>
 
         {/* Div linha com 3 botoes*/}

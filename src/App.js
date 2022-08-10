@@ -79,6 +79,9 @@ function App() {
 
             <Route exact path="/documentation" component={DocumentationView} />
 
+            <Route exact path="/send" component={SignInView} />
+
+
             <Route exact path="/500" component={InternalServerErrorView} />
             <Route component={NotFoundView} />
           </Switch>

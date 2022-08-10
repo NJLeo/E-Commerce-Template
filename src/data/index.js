@@ -10,13 +10,14 @@ export const data = {
     // },
     {
       to: "/link",
-      img: "../../images/banner/banner1.png",
+      img: "../../images/banner/Copy of Kit Vegan 1 (1).png",
       title: "Outros Produtos 1",
       description: " Praesent commodo cursus magna, vel scelerisque nisl.",
     },
     {
       to: "/link",
-      img: "../../images/banner/banner2.png",
+      img: "../../images/banner/Copy of Kit Vegan 1 (1).png",
+      //img: "../../images/banner/banner2.png",
       title: "Outros Produtos 2",
       description: " Praesent commodo cursus magna, vel scelerisque nisl.",
     },

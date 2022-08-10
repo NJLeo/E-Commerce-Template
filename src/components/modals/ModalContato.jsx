@@ -33,21 +33,38 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
     };
 
     function send() {
+
         const formData = new FormData();
         console.log('2 - new formData: ', formData);
 
         Object.keys(contactInfo).forEach(key => formData.append(key, contactInfo[key]));
-        console.log('3 - formData após OBJ Keys :', formData.data, formData);
+        console.log('3 - formData após OBJ Keys :', formData.data, formData, formData._boundary);
 
-        axios.post('http://localhost:3030/send',
-            formData,
-            {
-                headers: {
-                    "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
-                }
-            })
-            .then(response => { console.log(response.data); })
-    };
+        const exemploJson = JSON.stringify({
+            "nome": "nome1",
+            "email": "email1",
+            "mensagem": "msg1"
+        });
+
+        const res = axios.post('/send', exemploJson, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        // res.data.data;
+        // res.data.headers['Content-Type'];
+
+
+        // axios.post('/send', exemploJson, {
+        //     headers: {
+        //         'Content-Type': `application/json`,
+        //         //'Content-Type': `multipart/form-data; boundary=${formData._boundary}`,//   
+        //     },
+        //     body: exemploJson
+
+        // })
+        //     .then(response => alert(response.data));
+    }
 
     return (
         <div>
@@ -66,7 +83,7 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                 <DialogTitle id="alert-dialog-title" className='titulo text-center'>
                     {"Fale conosco"}
                 </DialogTitle>
-    
+
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
                         Diag Content Text
@@ -81,9 +98,9 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                         <label htmlFor="mensagem" className='formLabels'> Mensagem:  </label>
                         <textarea type="text" id="mensagem" name="mensagem" placeholder='Escreva sua mensagem: ' onChange={handleContactFormInputChange} />
                     </form>
-    
+
                 </DialogContent>
-    
+
                 <DialogActions
                     className='itemsDivBotoes'
                 >
@@ -94,7 +111,7 @@ function ModalContato({ openModalContato, closeModalContato, setOpenModalContato
                         Fechar
                     </Button>
                 </DialogActions>
-    
+
             </Dialog>
         </div>
     )
